@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MJA GEOCONSULTORES</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .icon-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .icon-list li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 120px;
+    }
+
+    .icon-list img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <img src="logo.png" alt="Logo MJA" class="slide active">
+    <img src="dron.png" alt="casa" class="slide">
+  </div>
+
+  <h3>Expertos en temas relacionados con Topografía, Geomática, Geodesia, Fotogrametría y sus ramas afines</h3>
+
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="servicios">
+    <h2>Servicios Profesionales</h2>
+
+    <div class="servicio">
+      <h4>Avalúos Urbanos</h4>
+      <p>Valuación profesional de propiedades urbanas basada en normativa IGAC y NTS 01.</p>
+      <ul class="icon-list">
+        <li>
+          <img src="casa.png" alt="Casa">
+          Casas y Apartamentos
+        </li>
+        <li>
+          <img src="local.png" alt="Local comercial">
+          Locales comerciales
+        </li>
+        <li>
+          <img src="terreno.png" alt="Terreno urbano">
+          Terrenos urbanos
+        </li>
+        <li>
+          <img src="edificio.png" alt="Edificio completo">
+          Edificios completos
+        </li>
+      </ul>
+    </div>
+
+    <div class="servicio">
+      <h4>Avalúos Rurales</h4>
+      <p>Valuación profesional de propiedades rurales según resolución IGAC y NTS 01.</p>
+      <ul>
+        <li>Fincas agrícolas</li>
+        <li>Haciendas ganaderas</li>
+        <li>Terrenos forestales</li>
+      </ul>
+    </div>
+
+    <div class="servicio">
+      <h4>Avalúos Hipotecarios</h4>
+      <p>Valuación con validez en entidades financieras: Grupo Aval, Bancolombia, Davivienda, Caja Social.</p>
+    </div>
+
+    <div class="servicio">
+      <h4>Levantamientos Topográficos</h4>
+      <ul>
+        <li>Planimetría y altimetría</li>
+        <li>Replanteo de obras</li>
+        <li>Curvas de nivel</li>
+        <li>Modelos digitales del terreno</li>
+      </ul>
+    </div>
+
+    <div class="servicio">
+      <h4>Fotogrametría con Drones</h4>
+      <ul>
+        <li>Ortomosaicos de alta resolución</li>
+        <li>Modelos digitales de superficie</li>
+        <li>Inspección de infraestructura</li>
+        <li>Monitoreo de proyectos</li>
+      </ul>
+    </div>
+
+    <div class="servicio">
+      <h4>Informes Técnicos</h4>
+      <ul>
+        <li>Avalúos certificados</li>
+        <li>Informes topográficos</li>
+        <li>Estudios de mercado</li>
+        <li>Peritajes judiciales</li>
+      </ul>
+    </div>
+
+    <div class="logos">
+      <h4>Nuestras Acreditaciones</h4>
+      <img src="logo1.png" alt="logo 1">
+      <img src="logo2.png" alt="logo 2">
+      <img src="logo3.png" alt="logo 3">
+    </div>
+  </section>
+
+  <section id="proceso">
+    <h2>Nuestro Proceso</h2>
+    <ol>
+      <li><strong>Consulta Inicial:</strong> Evaluamos tus necesidades y asesoramos sobre el servicio ideal.</li>
+      <li><strong>Trabajo de Campo:</strong> Recolección de datos con tecnología de punta.</li>
+      <li><strong>Procesamiento de Datos:</strong> Análisis y generación de resultados.</li>
+      <li><strong>Entrega de Resultados:</strong> Entregamos informes, planos y modelos listos para usar.</li>
+    </ol>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p><strong>Dirección:</strong> Calle 12 Norte</p>
+    <p><strong>Teléfono:</strong> +57 3012095695 - +57 3105153792 - +57 3177698937</p>
+    <p><strong>Email:</strong> geoconsultores@gmail.com</p>
+    <p><strong>Horario:</strong> Lunes a Viernes: 8:00 am - 6:00 pm | Sábados: 9:00 am - 1:00 pm</p>
+
+    <form id="form">
+      <div class="field">
+        <label for="from_name">Nombre del remitente</label>
+        <input type="text" name="from_name" id="from_name" required>
+      </div>
+      <div class="field">
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+      </div>
+      <div class="field">
+        <label for="email_id">Correo de contacto</label>
+        <input type="text" name="email_id" id="email_id" required>
+      </div>
+      <input type="submit" id="button" value="Enviar mensaje">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MJA Geoconsultores. Todos los derechos reservados.</p>
+    <p><a href="#">Términos y condiciones</a> | <a href="#">Política de privacidad</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
